@@ -1,0 +1,31 @@
+.header {
+    background: #666 ;
+
+    &__body {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 0 10px;
+    }
+    &__logo {
+        
+    }
+    &__nav {
+        flex: 0 1 400px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item {
+        & a {
+            &:hover {
+                text-decoration: underline;
+                transition: .4s ease-out;
+            }
+        }
+    }
+}
