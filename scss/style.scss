@@ -79,9 +79,16 @@
         align-items: center;
 
         position: relative;
+
         & span  {
             position: relative;
             z-index: 1;
+        }
+        &:hover {
+            &::after , &:active {
+                opacity: 1;
+                box-shadow: 0px 0px 5px rgba(0,0,0,.4);
+            }
         }
         &::after {
             display: block;
@@ -100,6 +107,11 @@
 }
 .clearAll {
     color: red;
+    &:hover {
+        &::after , &:active {
+            opacity: .4;
+        }
+    }
     &::after {
         background: red;
         opacity: .2;
@@ -118,8 +130,13 @@
 }
 .equal , .base-operator {
     color: #fff;
+    &:hover {
+        &::after , &:active{
+            opacity: 1;
+        }
+    }
     &::after {
-        opacity: 1;
+        opacity: .8;
     }
 }
 .equal {
