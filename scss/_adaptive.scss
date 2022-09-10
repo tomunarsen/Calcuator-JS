@@ -64,6 +64,36 @@
     }
 }
 // mobile - mini
-@media (max-width:387.98px) {
-
+@media (max-width:487.98px) {
+    .main {
+    }
+    .container {
+    }
+    .calculator {
+        padding: 0;
+        border-radius: 0;
+        &__body {
+            height: 100vh;
+            width: 100vw;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        &__display {
+            flex: 1 1 auto;
+            font-size: 45px;
+        }
+        &__buttons {}
+        &__button {
+            font-size: 30px;
+        }
+    }
+    .clearAll {
+    }
+    .base-operator {
+    }
+    .zero {
+    }
+    .equal {
+    }
+    
 }
